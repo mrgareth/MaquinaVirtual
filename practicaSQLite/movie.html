@@ -1,0 +1,27 @@
+<!DOCTYPE>
+
+<HTML>
+	<head>
+		<meta charset = "utf-8">
+		<script src = "busqueda.js"></script> 
+		<title> Buscar peliculas </title>
+	</head>
+	<body>
+		<form>
+			<select name = "kind"></select>
+				<option value = "actor">actor<br>
+				<option value = "movie">movie<br>
+			</select>
+			<input type = "text" name = "term"><br>
+			<button onclick = "search(document.getElementByName(kind),
+						document.getEleemntByName(term))">
+				Buscar
+			</button>
+			
+		</form>		
+		<hr>
+		<div id = "answer">
+
+		</div>
+	</body>
+</HTML>

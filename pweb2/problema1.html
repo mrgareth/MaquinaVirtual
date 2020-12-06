@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Gráficos comparativos</title>
+		<script>
+			function loadDoc(url, cFunction){
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+    			if (this.readyState == 4 && this.status == 200) {
+      			cFunction(this);
+    				}
+  				};
+  			xhttp.open("GET", url, true);
+  			xhttp.send();
+			}
+			function myFunction(xhttp) {
+  			document.getElementById("demo").innerHTML = "function";
+  			var data = JSON.parse(xhttp.responseText);
+			}
+			function getArrayLastValue(data){
+				var = myArray[];
+				for (i in data){
+					var name = data[i].region;
+					var confirmedArray = data[i].confirmed;
+					var object = {
+						name: name,
+						confirmed: confirmedArray
+					};
+				}
+				return myArray;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Ejercicio 1</h1>
+		<h3>Haga gráficos comparativos entre regiones elegidas por el usuario.</h3>
+		<button type="button" onclick="loadDoc('data.json',myFunction)">Regiones</button>
+		<div>
+		</div>
+	</body>
+</html>

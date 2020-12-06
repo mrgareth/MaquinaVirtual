@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head>	
+	<meta charset = "utf-8"> 
+	<link rel = "stylesheet" type = "text/css" href = "estilo.css">
+	<title>Consultas a la bibliografía</title>
+	<script src = "consulta.js">
+        </script>
+</head>
+<body>
+	<form>	
+		<fieldset>
+		<legend>Búsqueda biblográfica por:</legend>
+		<select name = "kind">
+		<option value = "author"> autor <br>
+		<option value = "title"> título <br>
+		<option value = "year"> año <br>
+		</select>
+	    	<input type = "text" name = "keyword"><br>
+		<button onclick="buscar(document.getElementbyName('kind').value, 
+					document.getElementbyName('keyword').value)">
+			Buscar
+		</button>
+		<div name = "respuesta">	
+		</div>
+		</fieldset>
+	</form>
+</body>
+</html>

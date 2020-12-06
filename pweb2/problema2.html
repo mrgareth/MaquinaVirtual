@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gráfico de crecimiento</title>
+    <script>
+			function loadDoc(url, cFunction){
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+    			if (this.readyState == 4 && this.status == 200) {
+      			cFunction(this);
+    				}
+  				};
+  			xhttp.open("GET", url, true);
+  			xhttp.send();
+			}
+			function myFunction(xhttp) {
+  			document.getElementById("demo").innerHTML = "functio";
+  			var data = JSON.parse(xhttp.responseText);
+			}
+			function getArrayLastValue(data){
+				var = myArray[];
+				for (i in data){
+          if(data[i].region!="lima"&&data[i].region!="callao"){
+					     var name = data[i].region;
+					     var confirmedArray = data[i].confirmed;
+          }
+				}
+
+				return myArray;
+			}
+		</script>
+  </head>
+  <body>
+
+  </body>
+</html>

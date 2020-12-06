@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = 'utf-8'>
+		<title>Búsqueda</title>
+		<script src = 'consulta.js' ></script>
+	</head>
+	<body>
+		<select name = 'kind'>
+			<h3>Buscar</h3>
+			<option value = 'actor'> Actor <br>
+			<option value = 'movie'> Pelicula <br>
+			<option value = 'casting'> Actores de una pelicula <br>
+			<option value = 'filmography'> Filmografia de un actor <br>
+		</select>
+		<input type = 'text' name = 'term'><br>
+		<button onclick = 'search(document.getElementByName(kind).value,
+					document.getElementByName(term).value)'>
+			Buscar
+		</button>
+		<hr>
+		<div name = 'answer'>
+		</div>
+	</body>
+</html>
+	

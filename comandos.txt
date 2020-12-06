@@ -1,0 +1,38 @@
+gf -- te lleva a otro archivo dentro de el actual(Ctrl-o -- regresas al anterior archivo) 
+p -- pega despues del cursor lo que se borro antes (parecido a Ctrl+x)
+shift+p -- pega en el lugar que indica lo ultimo que se borro 
+
+
+MODOS
+ normal -> escape(Esc), Esc+Esc (mas rápido)
+ visual(seleccionar) -> v
+ insertar -> i -- normal
+	     a -- despues del cursor(cuando hay)
+	     Shift+a -- al final de la linea
+	     o -- en la siguiente linea
+ reemplazar -> insert(ins)
+		
+ELIMINAR: 
+x -- letra por letra
+c+i+w -- elimina una palabra y entra al modo insertar
+#+d+d -- # se reemplaza por un numero para eliminar varias lineas
+d+...:
+ w, e -- elimina una palabra
+ shift+4 --
+ d -- elimina una linea
+ #+w -- # se reemplaza por el numero de letras a eliminar 
+
+NAVEGANDO EN EL TIEMPO:
+u -- volver al cambio anterior(pasado)(antes)(parecido a Ctrl+z)
+Ctrl+r -- ir hacia lo que sigue(futuro)(después)(parecido a Ctrl+y)
+
+MOVIENDOME:
+#+w -- # se reemplaza por un numero al que se quiere llegar
+h -- izquierda(atras)
+j -- abajo(parece una flecha hacia abajo)
+k -- arriba
+l -- derecha(adelante)
+w -- derecha (adelante) de palabra en palabra
+b -- izquierda (atras) de palabra en palabra
+e -- derecha (adelanta) de palabra en palabra, pero al final
+
